@@ -26,8 +26,33 @@ App de iOS que, nada más abrirla, escucha la música que suena alrededor, recon
 ## Puesta en marcha
 
 1. Abre `Letrasios.xcodeproj` y comprueba el *Team* en *Signing & Capabilities*.
-2. **Activa ShazamKit en el App ID.** No es una *capability* de Xcode: developer.apple.com → Certificates, Identifiers & Profiles → Identifiers → `Altamirano.Letrasios` → pestaña **App Services** → marca **ShazamKit** → Save. Sin esto, `SHManagedSession` funciona pero nunca encuentra nada.
+2. **Activa ShazamKit en el App ID** (ver abajo). Sin esto, `SHManagedSession` funciona pero nunca encuentra nada.
 3. Ejecuta en un iPhone real: el simulador no oye música.
+
+### Activar ShazamKit
+
+> ⏳ **Pendiente** a 19/09/2026: el portal devolvía un error genérico y aún no está activado.
+
+ShazamKit **no se puede activar desde Xcode**: no aparece en *+ Capability*, porque no es un
+permiso que viaje dentro de la app, sino un servicio que los servidores de Shazam comprueban contra
+el App ID. Se activa una sola vez, en la web; después la firma automática lo recoge sola.
+
+1. Entra en https://developer.apple.com/account (la web de desarrolladores, **no** App Store Connect).
+2. Comprueba arriba a la derecha que está seleccionado el equipo de pago (`JKMR84FU58`).
+3. **Certificates, IDs & Profiles** → **Identifiers**.
+4. Abre el App ID cuyo *Identifier* es `Altamirano.Letrasios` (si lo creó Xcode se llama «XC Altamirano Letrasios»). Ya existe: la app está dada de alta en App Store Connect.
+5. Pestaña **App Services** (no *Capabilities*) → marca **ShazamKit** → **Save**.
+6. Vuelve a ejecutar desde Xcode. Si sigue sin reconocer: *Xcode → Settings → Accounts → Download Manual Profiles*, borra la app del iPhone y reinstálala. El cambio puede tardar unos minutos en propagarse.
+
+**Cómo saber si falta.** Con cualquier canción conocida la app se queda en «Escuchando…» y acaba
+diciendo «No reconozco lo que suena». En Console.app, filtrando por `com.letrasios.listening`, cada
+intento sale como `recognition failed`.
+
+**Si el portal responde «Sorry, we are unable to process your request. An unknown error occurred».**
+Es un error genérico de Apple, no del proyecto. Por orden: ventana privada e iniciar sesión de nuevo;
+otro navegador (extensiones y Relay privado de iCloud lo provocan en Safari); aceptar cualquier
+acuerdo pendiente en App Store Connect → *Business*; comprobar el equipo seleccionado; y si nada
+funciona, esperar y mirar https://developer.apple.com/system-status/.
 
 ### Modo demo (solo Debug)
 

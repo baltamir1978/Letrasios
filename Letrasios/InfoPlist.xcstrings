@@ -1,74 +1,102 @@
 {
-  "sourceLanguage": "es",
-  "strings": {
-    "CFBundleDisplayName": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras"
+  "sourceLanguage" : "es",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras"
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Letras"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras"
           }
         },
-        "pt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras"
           }
         }
       }
     },
-    "NSMicrophoneUsageDescription": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras listens to the music around you to recognize the song and show its lyrics. Audio is never recorded or stored."
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Letrasios"
+          }
+        }
+      }
+    },
+    "NSMicrophoneUsageDescription" : {
+      "comment" : "Privacy - Microphone Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras hört die Musik um dich herum, um den Song zu erkennen und seinen Text anzuzeigen. Audio wird weder aufgenommen noch gespeichert."
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras écoute la musique autour de vous pour reconnaître la chanson et afficher ses paroles. L'audio n'est ni enregistré ni conservé."
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras listens to the music around you to recognize the song and show its lyrics. Audio is never recorded or stored."
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras hört die Musik um dich herum, um den Song zu erkennen und seinen Text anzuzeigen. Audio wird weder aufgenommen noch gespeichert."
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Letras escucha la música que suena a tu alrededor para reconocer la canción y mostrar su letra. El audio no se graba ni se guarda."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Letras ascolta la musica intorno a te per riconoscere la canzone e mostrarne il testo. L'audio non viene registrato né salvato."
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras écoute la musique autour de vous pour reconnaître la chanson et afficher ses paroles. L'audio n'est ni enregistré ni conservé."
           }
         },
-        "pt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A Letras ouve a música à sua volta para reconhecer a canção e mostrar a letra. O áudio não é gravado nem guardado."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letras ascolta la musica intorno a te per riconoscere la canzone e mostrarne il testo. L'audio non viene registrato né salvato."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Letras ouve a música à sua volta para reconhecer a canção e mostrar a letra. O áudio não é gravado nem guardado."
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
