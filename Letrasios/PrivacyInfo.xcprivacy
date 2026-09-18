@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- No tracking: no third-party SDKs, no analytics, no advertising identifier. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+
+	<!-- Nothing is collected. The microphone feeds ShazamKit, which sends Apple an audio
+	     signature (not the audio) to identify the song; that is Apple's own framework. The
+	     only other traffic is the lyrics lookup on LRCLIB (song title and artist), with no
+	     account, no identifier and no usage data attached. Nothing is stored on the device. -->
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+
+	<!-- No required-reason APIs are used (no UserDefaults, file timestamps, disk space,
+	     boot time or keyboard APIs). -->
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array/>
+</dict>
+</plist>
